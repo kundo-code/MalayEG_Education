@@ -56,15 +56,16 @@ h2{font-family:'Gowun Batang',serif;font-size:clamp(28px,4.2vw,42px);line-height
 /* ---------- 내비게이션 ---------- */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,51,43,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,164,92,.25)}
 .nav-in{max-width:var(--max);margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{color:var(--ivory);font-weight:900;font-size:15px;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
-.logo .crown{width:26px;height:26px;border-radius:6px;background:var(--brass);color:var(--pine);display:grid;place-items:center;font-size:14px}
-.logo em{font-style:normal;color:var(--brass);font-weight:700}
+.logo{color:var(--ivory);font-weight:900;font-size:18px;letter-spacing:.02em;display:flex;align-items:center;gap:12px}
+.logo img{height:40px;width:auto;background:#fff;padding:4px 8px;border-radius:8px}
+.logo em{font-style:normal;color:var(--brass);font-weight:700;font-size:15px}
 .menu{display:flex;gap:26px;font-size:14px;color:#d9e2dc}
 .menu a{opacity:.85;transition:.2s}
 .menu a:hover{opacity:1;color:var(--brass)}
 .nav-cta{background:var(--flame);color:#fff;font-weight:700;font-size:14px;padding:9px 18px;border-radius:999px;transition:.2s;white-space:nowrap}
 .nav-cta:hover{background:#a94519}
 @media(max-width:860px){.menu{display:none}}
+@media(max-width:480px){.logo{font-size:16px;gap:9px}.logo img{height:34px}.logo em{display:none}}
 
 /* ---------- 히어로 ---------- */
 .hero{position:relative;background:
@@ -275,7 +276,7 @@ footer p{margin:4px 0}
 <!-- ===== NAV ===== -->
 <nav>
   <div class="nav-in">
-    <a class="logo" href="#top"><span class="crown">♔</span>킹슬리 스쿨링 <em>2027 WINTER</em></a>
+    <a class="logo" href="#top"><img src="kingsley-logo.png" alt="Maple Leaf Kingsley International School">킹슬리 스쿨링 <em>2027 WINTER</em></a>
     <div class="menu">
       <a href="#why">왜 말레이시아</a>
       <a href="#school">학교 소개</a>
@@ -564,22 +565,21 @@ footer p{margin:4px 0}
     <div class="price-grid">
       <div class="price rv">
         <h3>스쿨링</h3>
-        <p class="desc">정규수업 참여 중심 프로그램</p>
+        <p class="desc">학생 단독, 통학 별도</p>
         <div class="won">4,800,000원</div>
-        <div class="rm">RM 12,630 · 계약금 RM 6,315</div>
+        <div class="rm" style="color:var(--flame);font-weight:700">RM 12,700 / 계약금 100만원</div>
         <ul>
           <li>킹슬리 정규수업 및 교내활동 참여</li>
-          <li>화·금 방과 후 영어수업</li>
           <li>현지·국내 담당자 연계 관리</li>
         </ul>
         <a class="btn btn-primary" href="#contact" style="background:var(--pine)">상담 신청</a>
       </div>
       <div class="price pick rv">
         <span class="pop">아이 단독 참가 · 초3 이상</span>
-        <h3>기숙사형</h3>
-        <p class="desc">스쿨링 + 킹슬리 기숙사 생활</p>
+        <h3>기숙사</h3>
+        <p class="desc">학교 기숙사 (2인 1실)<br>전 일정 식사, 주말 액티비티</p>
         <div class="won">6,400,000원</div>
-        <div class="rm">RM 16,840 · 계약금 RM 8,420</div>
+        <div class="rm" style="color:var(--flame);font-weight:700">RM 22,400 / 계약금 100만원</div>
         <ul>
           <li>스쿨링 프로그램 전체 포함</li>
           <li>2인 1실 기숙사 · 식사 제공</li>
@@ -589,27 +589,22 @@ footer p{margin:4px 0}
         <a class="btn btn-primary" href="#contact">상담 신청</a>
       </div>
       <div class="price rv">
-        <h3>호텔형</h3>
-        <p class="desc">스쿨링 + 선웨이 라군 호텔 · 가족 동반</p>
+        <h3>호캉스</h3>
+        <p class="desc">부모 1 + 학생 1<br>호텔 (조식, 세탁서비스 포함) · 스쿨링 (통학버스 이용)</p>
         <div class="won">8,500,000원</div>
-        <div class="rm">RM 22,370 · 계약금 RM 11,185</div>
+        <div class="rm" style="color:var(--flame);font-weight:700">RM 16,800 / 계약금 100만원</div>
         <ul>
           <li>스쿨링 프로그램 전체 포함</li>
           <li>4성급 호텔 숙박 · 매일 스쿨버스</li>
           <li>가족 한 달살기 병행 가능</li>
-          <li>부모님 영어·골프 프로그램</li>
         </ul>
         <a class="btn btn-primary" href="#contact" style="background:var(--pine)">상담 신청</a>
       </div>
     </div>
 
-    <div class="pay-note rv">
-      <b>결제 안내</b>
-      <ul style="list-style:disc;margin-top:8px">
-        <li>말레이시아 현지 사업자를 통해 결제되며, 참가비의 50%를 계약금으로 납부 후 확인되면 신청이 확정됩니다.</li>
-        <li>카드 결제는 링깃 기준으로 가능하며 결제금액의 4% 수수료가 별도 부과됩니다. (스쿨링 RM 13,135.20 / 기숙사형 RM 17,513.60 / 호텔형 RM 23,264.80)</li>
-        <li>국내 현금영수증 발급은 불가하며, 실제 원화 청구금액은 카드사 환율과 해외 이용 수수료에 따라 달라질 수 있습니다.</li>
-      </ul>
+    <div class="pay-note rv" style="text-align:center">
+      참가비의 50% 계약금 납부 시 신청 확정 · 카드 결제 시 4% 수수료 별도 · 국내 현금영수증 발급 불가
+      <div style="margin-top:8px;font-size:13px;color:#7a8a82">※ 현지 카드 결제 진행 시 해당됨</div>
     </div>
 
     <div class="rv" style="max-width:760px;margin:44px auto 0;text-align:center">
